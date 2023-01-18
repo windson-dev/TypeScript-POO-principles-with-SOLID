@@ -10,7 +10,7 @@ class Dwarf extends Race {
     Dwarf.instanceCount += 1;
   }
 
-  get maxLifePoints(): number {
+  public get maxLifePoints(): number {
     return this._life;
   }
 
