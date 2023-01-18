@@ -27,5 +27,5 @@ export default abstract class Archetype {
     throw new Error('Not implemented');
   }
 
-  public abstract get energyType():EnergyType;
+  public abstract get energyType(): EnergyType;
 }
