@@ -13,7 +13,7 @@ export default class Character implements Fighter {
   private _defense: number;
   private _dexterity: number;
   private _name: string;
-  private _energy: Energy; // ENERGY
+  private _energy: Energy;
 
   constructor(name: string) {
     this._name = name;
@@ -75,11 +75,11 @@ export default class Character implements Fighter {
     return this._lifePoints;
   }
 
-  public attack(enemy: Fighter):void {
+  public attack(enemy: Fighter) {
     enemy.receiveDamage(this._strength);
   }
 
-  public levelUp(): void {
+  public levelUp() {
     this._maxLifePoints += getRandomInt(1, 10);
     this._strength += getRandomInt(1, 10);
     this._dexterity += getRandomInt(1, 10);
